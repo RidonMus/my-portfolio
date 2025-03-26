@@ -4,37 +4,159 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Name | Portfolio</title>
+    <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Header/Navigation -->
     <header>
         <nav>
             <div class="container">
                 <a href="#" class="logo">Your<span>Name</span></a>
-                <ul>
+                <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
             </div>
         </nav>
     </header>
 
+    <!-- Main Content -->
     <main>
         <!-- Hero Section -->
         <section id="home" class="hero">
             <div class="hero-content">
-                <h1>Hi, I'm <span class="highlight">Your Name</span></h1>
-                <p>A passionate developer creating beautiful websites.</p>
-                <a href="#projects" class="btn">View My Work</a>
+                <h1 class="animate">Hi, I'm <span class="highlight">Your Name</span></h1>
+                <p class="animate">Web Developer & Designer</p>
+                <a href="#projects" class="btn animate">View My Work</a>
+            </div>
+            <div class="scroll-down">
+                <a href="#about"><i class="fas fa-chevron-down"></i></a>
             </div>
         </section>
 
         <!-- About Section -->
         <section id="about" class="section">
             <div class="container">
-                <h2 class="section-title">About Me</h2>
+                <h2 class="section-title animate">About Me</h2>
                 <div class="about-content">
-                    <div class="
+                    <div class="about-img animate">
+                        <img src="https://via.placeholder.com/400" alt="Profile Photo">
+                    </div>
+                    <div class="about-text animate">
+                        <h3>My Journey</h3>
+                        <p>I'm a passionate developer with expertise in front-end technologies. I love creating beautiful, functional websites that deliver exceptional user experiences.</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title animate">My Projects</h2>
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card animate">
+                        <div class="project-img">
+                            <img src="https://via.placeholder.com/600x400" alt="Project 1">
+                        </div>
+                        <div class="project-info">
+                            <h3>Project Title</h3>
+                            <p>Project description and technologies used.</p>
+                            <div class="project-links">
+                                <a href="#" class="btn-small"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                                <a href="#" class="btn-small"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 2 -->
+                    <div class="project-card animate">
+                        <div class="project-img">
+                            <img src="https://via.placeholder.com/600x400" alt="Project 2">
+                        </div>
+                        <div class="project-info">
+                            <h3>Project Title</h3>
+                            <p>Project description and technologies used.</p>
+                            <div class="project-links">
+                                <a href="#" class="btn-small"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                                <a href="#" class="btn-small"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title animate">My Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-item animate">
+                        <i class="fab fa-html5"></i>
+                        <h3>HTML5</h3>
+                    </div>
+                    <div class="skill-item animate">
+                        <i class="fab fa-css3-alt"></i>
+                        <h3>CSS3</h3>
+                    </div>
+                    <div class="skill-item animate">
+                        <i class="fab fa-js"></i>
+                        <h3>JavaScript</h3>
+                    </div>
+                    <div class="skill-item animate">
+                        <i class="fab fa-react"></i>
+                        <h3>React</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title animate">Get In Touch</h2>
+                <form class="contact-form animate">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> Your Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
